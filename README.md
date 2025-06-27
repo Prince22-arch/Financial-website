@@ -97,12 +97,6 @@ This will:
   - **Password:** `admin123`
   - **Role:** `admin`
 
-3. **Login as admin:**
-- Go to http://localhost:5173
-- Use:
-  - **Username:** `admin`
-  - **Password:** `admin123`
-
 ### Start the backend server
 
 For development (with auto-restart):
@@ -140,7 +134,11 @@ The frontend will be running at http://localhost:5173.
 ## Usage
 
 1. Register or seed a user (see backend seed script or use MongoDB Compass).
-2. Login at http://localhost:5173 with your credentials.
+2. **Login as admin:**
+- Go to http://localhost:5173
+- Use:
+  - **Username:** `admin`
+  - **Password:** `admin123`
 3. Explore the dashboard:
    - View metrics, charts, and transactions
    - Filter/search/export transactions
