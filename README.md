@@ -70,11 +70,38 @@ MONGODB_URI=mongodb://localhost:27017/financial-dashboard
 JWT_SECRET=your_jwt_secret_here
 ```
 
-### Seed the database (optional)
+### Admin User Setup
+
+Before running the app, you should create an initial admin user. This is done using the provided seed script.
+
+#### How to Seed the Admin User
+
+1. **Configure your backend `.env` file** (if you haven't already):
+
+```yaml
+MONGODB_URI=mongodb://localhost:27017/financial-dashboard
+```
+
+2. **Run the seed script from the backend directory:**
 
 ```bash
 npm run seed
 ```
+
+This will:
+- Connect to your MongoDB database
+- Remove all existing users (for a clean start)
+- Create a new admin user with:
+  - **Username:** `admin`
+  - **Email:** `admin@example.com`
+  - **Password:** `admin123`
+  - **Role:** `admin`
+
+3. **Login as admin:**
+- Go to http://localhost:5173
+- Use:
+  - **Username:** `admin`
+  - **Password:** `admin123`
 
 ### Start the backend server
 
