@@ -170,10 +170,6 @@ MONGODB_URI: mongodb://localhost:27017/financial-dashboard  # MongoDB connection
 JWT_SECRET: your_jwt_secret_here  # Secret for JWT signing
 ```
 
-### Frontend:
-
-No special env needed for local dev (API is proxied or set in the service file).
-
 ## Postman Collection
 
 Import the included postman_collection.json (if provided) or create your own:
