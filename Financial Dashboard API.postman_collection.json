@@ -1,0 +1,311 @@
+{
+	"info": {
+		"_postman_id": "2709e0cb-4466-4940-b6b3-9fb3fd9af6ec",
+		"name": "Financial Dashboard API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46230438",
+		"_collection_link": "https://prince-1319933.postman.co/workspace/bf269efe-1dec-482f-8029-207cf75ad2e9/collection/46230438-2709e0cb-4466-4940-b6b3-9fb3fd9af6ec?action=share&source=collection_link&creator=46230438"
+	},
+	"item": [
+		{
+			"name": "Get Transactions",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Get Transactions",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/transactions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"transactions"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "100"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "98"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 26 Jun 2025 20:01:21 GMT"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1750968110"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2956"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b8c-cc2Px4wa/IytNLUOTbFX9eJqGNA\""
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"_id\": \"685d6259805d4d222cc7c08a\",\n            \"date\": \"2024-12-23T17:05:03.000Z\",\n            \"amount\": 2100,\n            \"category\": \"Expense\",\n            \"status\": \"Paid\",\n            \"user_id\": \"user_004\",\n            \"user_profile\": \"https://thispersondoesnotexist.com/\",\n            \"__v\": 0,\n            \"createdAt\": \"2025-06-26T15:08:09.521Z\",\n            \"updatedAt\": \"2025-06-26T15:08:09.521Z\"\n        },\n        {\n            \"_id\": \"685d6259805d4d222cc7c0fa\",\n            \"date\": \"2024-12-20T17:51:34.000Z\",\n            \"amount\": 1100,\n            \"category\": \"Expense\",\n            \"status\": \"Pending\",\n            \"user_id\": \"user_004\",\n            \"user_profile\": \"https://thispersondoesnotexist.com/\",\n            \"__v\": 0,\n            \"createdAt\": \"2025-06-26T15:08:09.527Z\",\n            \"updatedAt\": \"2025-06-26T15:08:09.527Z\"\n        },\n        {\n            \"_id\": \"685d6259805d4d222cc7c152\",\n            \"date\": \"2024-12-18T12:26:42.000Z\",\n            \"amount\": 1200,\n            \"category\": \"Expense\",\n            \"status\": \"Paid\",\n            \"user_id\": \"user_004\",\n            \"user_profile\": \"https://thispersondoesnotexist.com/\",\n            \"__v\": 0,\n            \"createdAt\": \"2025-06-26T15:08:09.538Z\",\n            \"updatedAt\": \"2025-06-26T15:08:09.538Z\"\n        },\n        {\n            \"_id\": \"685d6259805d4d222cc7c096\",\n            \"date\": \"2024-12-17T09:58:20.000Z\",\n            \"amount\": 550,\n            \"category\": \"Expense\",\n            \"status\": \"Paid\",\n            \"user_id\": \"user_004\",\n            \"user_profile\": \"https://thispersondoesnotexist.com/\",\n            \"__v\": 0,\n            \"createdAt\": \"2025-06-26T15:08:09.522Z\",\n            \"updatedAt\": \"2025-06-26T15:08:09.522Z\"\n        },\n        {\n            \"_id\": \"685d6259805d4d222cc7c106\",\n            \"date\": \"2024-12-16T18:42:10.000Z\",\n            \"amount\": 1300,\n            \"category\": \"Expense\",\n            \"status\": \"Paid\",\n            \"user_id\": \"user_004\",\n            \"user_profile\": \"https://thispersondoesnotexist.com/\",\n            \"__v\": 0,\n            \"createdAt\": \"2025-06-26T15:08:09.528Z\",\n            \"updatedAt\": \"2025-06-26T15:08:09.528Z\"\n        },\n        {\n            \"_id\": \"685d6259805d4d222cc7c19c\",\n            \"date\": \"2024-12-16T10:04:21.000Z\",\n            \"amount\": 3200,\n            \"category\": \"Expense\",\n            \"status\": \"Pending\",\n            \"user_id\": \"user_004\",\n            \"user_profile\": \"https://thispersondoesnotexist.com/\",\n            \"__v\": 0,\n            \"createdAt\": \"2025-06-26T15:08:09.553Z\",\n            \"updatedAt\": \"2025-06-26T15:08:09.553Z\"\n        },\n        {\n            \"_id\": \"685d6259805d4d222cc7c178\",\n            \"date\": \"2024-12-15T12:44:07.000Z\",\n            \"amount\": 1100,\n            \"category\": \"Expense\",\n            \"status\": \"Paid\",\n            \"user_id\": \"user_004\",\n            \"user_profile\": \"https://thispersondoesnotexist.com/\",\n            \"__v\": 0,\n            \"createdAt\": \"2025-06-26T15:08:09.545Z\",\n            \"updatedAt\": \"2025-06-26T15:08:09.545Z\"\n        },\n        {\n            \"_id\": \"685d6259805d4d222cc7c114\",\n            \"date\": \"2024-12-15T12:04:51.000Z\",\n            \"amount\": 1100,\n            \"category\": \"Expense\",\n            \"status\": \"Pending\",\n            \"user_id\": \"user_004\",\n            \"user_profile\": \"https://thispersondoesnotexist.com/\",\n            \"__v\": 0,\n            \"createdAt\": \"2025-06-26T15:08:09.529Z\",\n            \"updatedAt\": \"2025-06-26T15:08:09.529Z\"\n        },\n        {\n            \"_id\": \"685d6259805d4d222cc7c0b2\",\n            \"date\": \"2024-12-12T15:46:35.000Z\",\n            \"amount\": 1200.5,\n            \"category\": \"Expense\",\n            \"status\": \"Paid\",\n            \"user_id\": \"user_004\",\n            \"user_profile\": \"https://thispersondoesnotexist.com/\",\n            \"__v\": 0,\n            \"createdAt\": \"2025-06-26T15:08:09.524Z\",\n            \"updatedAt\": \"2025-06-26T15:08:09.524Z\"\n        },\n        {\n            \"_id\": \"685d6259805d4d222cc7c138\",\n            \"date\": \"2024-12-12T15:45:06.000Z\",\n            \"amount\": 1100,\n            \"category\": \"Expense\",\n            \"status\": \"Paid\",\n            \"user_id\": \"user_004\",\n            \"user_profile\": \"https://thispersondoesnotexist.com/\",\n            \"__v\": 0,\n            \"createdAt\": \"2025-06-26T15:08:09.532Z\",\n            \"updatedAt\": \"2025-06-26T15:08:09.532Z\"\n        }\n    ],\n    \"pagination\": {\n        \"currentPage\": 1,\n        \"totalPages\": 30,\n        \"totalItems\": 300,\n        \"itemsPerPage\": 10,\n        \"hasNextPage\": true,\n        \"hasPrevPage\": false\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"admin\",\r\n  \"password\": \"admin123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/auth/login",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"admin\",\r\n  \"password\": \"admin123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "100"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "99"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 26 Jun 2025 19:58:26 GMT"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1750967967"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "315"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"13b-PueqbQjdFQPfaQQ2ARCQITEdUXI\""
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODVkMzNlMWU2Y2M2ZTMwNDhhNDRiMWUiLCJpYXQiOjE3NTA5Njc5MDYsImV4cCI6MTc1MTA1NDMwNn0.kvIKsYSMC3KitLw2z2qTsuIAlhxYi0RbkivtIzSovLY\",\n        \"user\": {\n            \"id\": \"685d33e1e6cc6e3048a44b1e\",\n            \"username\": \"admin\",\n            \"email\": \"admin@example.com\",\n            \"role\": \"admin\"\n        }\n    }\n}"
+				}
+			]
+		}
+	]
+}
