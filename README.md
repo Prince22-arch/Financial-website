@@ -181,13 +181,13 @@ Import the included postman_collection.json (if provided) or create your own:
 - **"Access token required"**: Make sure you are logged in and sending the JWT in the Authorization header as Bearer <token>.
 - **Frontend can't reach backend**: Make sure both servers are running and CORS is enabled in backend.
 
-## Customization
+## Demo Video
 
-- Add more transaction categories or statuses in /backend/src/models/Transaction.ts
-- Change dashboard metrics or charts in /frontend/src/components/dashboard/
+https://github.com/user-attachments/assets/3ba3001c-e57c-404b-841a-35ae780b1071
+
+
 
 ## License
-
 MIT
 
 Happy hacking!
