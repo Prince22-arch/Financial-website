@@ -185,13 +185,8 @@ Import the included postman_collection.json (if provided) or create your own:
 - **Frontend can't reach backend**: Make sure both servers are running and CORS is enabled in backend.
 
 ## Demo Video
-
-
 https://github.com/user-attachments/assets/3ba3001c-e57c-404b-841a-35ae780b1071
 
-## License
-MIT
+## License MIT
 
 Happy hacking!
-
-For any issues, please open an issue or contact the maintainer.
