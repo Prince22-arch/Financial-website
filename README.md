@@ -97,6 +97,13 @@ This will:
   - **Password:** `admin123`
   - **Role:** `admin`
 
+#### How to Seed the Data
+```bash
+npm run seed:transactions
+```
+This will:
+- Fetch all data from data.json to mongodb
+
 ### Start the backend server
 
 For development (with auto-restart):
