@@ -189,8 +189,6 @@ Import the included postman_collection.json (if provided) or create your own:
 
 https://github.com/user-attachments/assets/3ba3001c-e57c-404b-841a-35ae780b1071
 
-
-
 ## License
 MIT
 
